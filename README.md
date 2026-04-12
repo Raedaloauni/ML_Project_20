@@ -13,10 +13,7 @@ To show the progress of the analysis, I have included different versions of the 
     * *Result:* **XGBoost AUC increased from 0.80 to 0.95**, becoming the new Champion Model.
 3.  **[Credit_Scoring_FINAL.ipynb](./Credit_Scoring_FINAL.ipynb)**: Final production-ready report.
 
-##  Final Results (Optimized XGBoost)
-* **AUC-ROC:** 0.9531
-* **Accuracy:** Improved significantly through hyperparameter tuning.
-* **Top Features:** Revolving Utilization, Debt Ratio, and Age.
+
 
 ##  Tech Stack
 * **Language:** Python
