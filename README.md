@@ -1,16 +1,16 @@
-# 💳 Credit Scoring — Default Risk Prediction
+# Credit Scoring :Risk Prediction
 
 > Machine Learning project for predicting the probability of financial default using the **GiveMeSomeCredit** dataset.
 
-## 🚀 Live Demo
+##  Live Demo
 
-👉 **[Credit Scoring Dashboard — Click to open](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
+ **[Credit Scoring Dashboard — Click to open](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
 
 > Interactive app with real-time prediction + SHAP explainability
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Dataset](#-dataset)
@@ -24,7 +24,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Credit scoring is a critical task in the banking and financial industry. This project builds a complete Machine Learning pipeline to **predict whether a borrower will experience serious financial distress within 2 years**.
 
@@ -38,7 +38,7 @@ The pipeline covers:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 | Property | Details |
 |---|---|
@@ -66,26 +66,26 @@ The pipeline covers:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ML_Project_20/
 │
-├── 📓 Credit_Scoring_DRAFT.ipynb         # Draft 1 — Initial exploration & baseline models
-├── 📓 Credit_Scoring_DRAFT_V2.ipynb      # Draft 2 — XGBoost hyperparameter tuning
-├── 📓 Credit_Scoring_Version_Finale.ipynb # Final version — Clean & complete pipeline
+├──  Credit_Scoring_DRAFT.ipynb         # Draft 1 — Initial exploration & baseline models
+├──  Credit_Scoring_DRAFT_V2.ipynb      # Draft 2 — XGBoost hyperparameter tuning
+├──  Credit_Scoring_Version_Finale.ipynb # Final version — Clean & complete pipeline
 │
-├── 🌐 app.py                             # Streamlit web application
-├── 📦 best_model.pkl                     # Saved champion model (XGBoost Optimized)
-├── 📦 scaler.pkl                         # Saved StandardScaler
-├── 📄 requirements.txt                   # Python dependencies
-├── 📊 GiveMeSomeCredit.csv               # Dataset
-└── 📖 README.md                          # Project documentation
+├──  app.py                             # Streamlit web application
+├──  best_model.pkl                     # Saved champion model (XGBoost Optimized)
+├──  scaler.pkl                         # Saved StandardScaler
+├──  requirements.txt                   # Python dependencies
+├──  GiveMeSomeCredit.csv               # Dataset
+└──  README.md                          # Project documentation
 ```
 
 ---
 
-## 🔬 Methodology
+##  Methodology
 
 ### 1. Exploratory Data Analysis (EDA)
 - Class distribution analysis → severe imbalance detected (14:1)
@@ -130,7 +130,7 @@ ML_Project_20/
 
 ---
 
-## 🏆 Results
+##  Results
 
 **Champion Model : XGBoost (Optimized)**
 
@@ -144,27 +144,27 @@ ML_Project_20/
 
 ---
 
-## 🌐 Streamlit Application
+##  Streamlit Application
 
 The deployed app includes:
 
-### 🎯 Tab 1 — Prediction
+###  Tab 1 — Prediction
 - Interactive sidebar form with all 10 client features
 - Real-time default risk prediction
 - Visual risk gauge (0% → 100%)
 - Metric cards : Default Probability, Risk Level, Monthly Income, Age
 - Input summary table
 
-### 🔬 Tab 2 — SHAP Explanation
+###  Tab 2 — SHAP Explanation
 - Feature contribution bar chart (red = increases risk, green = decreases risk)
 - Top 3 risk factors with SHAP values
 - Compatible with all model types (TreeExplainer / LinearExplainer)
 
-👉 **[Open the app](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
+ **[Open the app](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 | Category | Tools |
 |---|---|
@@ -179,7 +179,7 @@ The deployed app includes:
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 ```bash
 # 1. Clone the repository
@@ -197,11 +197,14 @@ The app will open at `http://localhost:8501`
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Raed Aloauni**
-- 🎓 Software Engineering Student — École Polytechnique de Sousse
-- 🐙 GitHub : [@Raedaloauni](https://github.com/Raedaloauni)
+-  Software Engineering Student — École Polytechnique de Sousse
+-  GitHub : [@Raedaloauni](https://github.com/Raedaloauni)
+**Amira Farrah**
+-  Software Engineering Student — École Polytechnique de Sousse
+  
 
 ---
 
