@@ -296,14 +296,29 @@ with tab2:
 
         with st.spinner("Computing SHAP values..."):
             try:
-                explainer   = shap.TreeExplainer(model)
-                shap_values = explainer.shap_values(input_data)
+                model_type = type(model).__name__
 
-                # For binary classification, take class 1
-                if isinstance(shap_values, list):
-                    sv = shap_values[1][0]
-                else:
+                if model_type in ['XGBClassifier', 'RandomForestClassifier', 'GradientBoostingClassifier']:
+                    explainer   = shap.TreeExplainer(model)
+                    shap_values = explainer.shap_values(input_data)
+                    if isinstance(shap_values, list):
+                        sv = shap_values[1][0]
+                    else:
+                        sv = shap_values[0]
+
+                elif model_type == 'LogisticRegression':
+                    # LinearExplainer needs background data — we use zeros as reference
+                    background  = np.zeros((1, len(FEATURES)))
+                    explainer   = shap.LinearExplainer(model, background, feature_perturbation="interventional")
+                    shap_values = explainer.shap_values(scaler.transform(input_data))
                     sv = shap_values[0]
+
+                else:
+                    # KNN or unknown → use KernelExplainer (slower but universal)
+                    background  = np.zeros((1, len(FEATURES)))
+                    explainer   = shap.KernelExplainer(model.predict_proba, background)
+                    shap_values = explainer.shap_values(input_data.values, nsamples=100)
+                    sv = shap_values[1][0]
 
                 # ── SHAP bar chart ───────────────────────────────
                 shap_df = pd.DataFrame({
@@ -349,7 +364,7 @@ with tab2:
 
             except Exception as e:
                 st.error(f"SHAP computation failed: {e}")
-                st.info("SHAP TreeExplainer works with XGBoost and Random Forest. If your champion is Logistic Regression, use shap.LinearExplainer instead.")
+                
     else:
         st.markdown("""
         <div style="text-align:center; padding: 4rem 2rem; color:#4a5568;">
