@@ -148,14 +148,14 @@ ML_Project_20/
 
 The deployed app includes:
 
-###  Tab 1 — Prediction
+###  Tab 1 : Prediction
 - Interactive sidebar form with all 10 client features
 - Real-time default risk prediction
 - Visual risk gauge (0% → 100%)
 - Metric cards : Default Probability, Risk Level, Monthly Income, Age
 - Input summary table
 
-###  Tab 2 — SHAP Explanation
+###  Tab 2 : SHAP Explanation
 - Feature contribution bar chart (red = increases risk, green = decreases risk)
 - Top 3 risk factors with SHAP values
 - Compatible with all model types (TreeExplainer / LinearExplainer)
