@@ -200,10 +200,8 @@ The app will open at `http://localhost:8501`
 ##  Author
 
 **Raed Aloauni**
--  Software Engineering Student — École Polytechnique de Sousse
--  GitHub : [@Raedaloauni](https://github.com/Raedaloauni)
 **Amira Farrah**
--  Software Engineering Student — École Polytechnique de Sousse
+
   
 
 ---
