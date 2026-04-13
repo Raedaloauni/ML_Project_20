@@ -200,6 +200,7 @@ The app will open at `http://localhost:8501`
 ##  Author
 
 **Raed Aloauni**
+
 **Amira Farrah**
 
   
