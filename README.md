@@ -1,25 +1,20 @@
-#  Credit Scoring & Risk Prediction Project
+# 💳 Credit Scoring — ML Project
 
-##  Project Overview
-This project aims to predict the probability of financial distress for bank customers. It demonstrates a complete Machine Learning pipeline, from data preprocessing to advanced model optimization.
+Prédiction du risque de défaut de paiement basée sur le dataset **GiveMeSomeCredit**.
 
-##  Project Structure & Evolution
-To show the progress of the analysis, I have included different versions of the work:
+## 🚀 Live Demo
+👉 [Credit Scoring Dashboard](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)
 
-1.  **[Credit_Scoring_DRAFT_V1.ipynb](./Credit_Scoring_DRAFT_V1.ipynb)**: Initial exploration.
-    * *Observation:* Simple models like Logistic Regression (AUC 0.845) outperformed default complex models.
-2.  **[Credit_Scoring_DRAFT_V2.ipynb](./Credit_Scoring_DRAFT_V2.ipynb)**: Model Optimization.
-    * *Action:* Applied `GridSearchCV` to fine-tune XGBoost.
-    * *Result:* **XGBoost AUC increased from 0.80 to 0.95**, becoming the new Champion Model.
-3.  **[Credit_Scoring_FINAL.ipynb](./Credit_Scoring_FINAL.ipynb)**: Final production-ready report.
+## 📌 Description
+- **Dataset** : GiveMeSomeCredit (150 000 clients)
+- **Objectif** : Prédire la probabilité de défaut de paiement (`SeriousDlqin2yrs`)
+- **Champion Model** : XGBoost (Optimized) — AUC = 0.9532
 
+## 🛠️ Technologies
+- Python, Scikit-learn, XGBoost, SHAP
+- Streamlit (déploiement)
+- SMOTE (gestion du déséquilibre)
+- GridSearchCV (optimisation)
 
-
-##  Tech Stack
-* **Language:** Python
-* **Environment:** Google Colab / GitHub
-* **Libraries:** Scikit-Learn, XGBoost, Pandas, Matplotlib, Seaborn
-
-##  Saved Assets
-* `best_model.pkl`: The optimized XGBoost model.
-* `scaler.pkl`: The StandardScaler for data normalization.
+## 👨‍💻 Auteur
+Raed Aloauni — École Polytechnique de Sousse
