@@ -71,9 +71,9 @@ The pipeline covers:
 ```
 ML_Project_20/
 │
-├──  Credit_Scoring_DRAFT.ipynb         # Draft 1 — Initial exploration & baseline models
-├──  Credit_Scoring_DRAFT_V2.ipynb      # Draft 2 — XGBoost hyperparameter tuning
-├──  Credit_Scoring_Version_Finale.ipynb # Final version — Clean & complete pipeline
+├──  Credit_Scoring_DRAFT.ipynb         # Draft 1  Initial : exploration & baseline models
+├──  Credit_Scoring_DRAFT_V2.ipynb      # Draft 2  XGBoost : hyperparameter tuning
+├──  Credit_Scoring_Version_Finale.ipynb # Final version : Clean & complete pipeline
 │
 ├──  app.py                             # Streamlit web application
 ├──  best_model.pkl                     # Saved champion model (XGBoost Optimized)
