@@ -4,7 +4,7 @@
 
 ##  Live Demo
 
- **[Credit Scoring Dashboard — Click to open](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
+ **[Credit Scoring Dashboard : Click to open](https://mlproject20-mz8ohmrciayhzf69xnbp6k.streamlit.app/)**
 
 > Interactive app with real-time prediction + SHAP explainability
 
